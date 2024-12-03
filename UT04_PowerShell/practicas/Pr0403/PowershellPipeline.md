@@ -40,3 +40,11 @@ En los siguientes ejercicios trabajaremos con los ficheros devueltos por el coma
 - Muestra el tamaño y nombre completo de todos los ficheros del directorio que tengan un tamaño superior a 10MB y extensión .exe ordenados por tamaño.
 
 ![alt text](image-9.png)
+
+- Muestra todos los procesos que tienen el estado Responding puesto a False, es decir, todos los procesos del sistema que se hayan colgado.
+
+![alt text](image-10.png)
+
+- Muestra todos los ficheros de C:\Windows que hayan sido creados con fecha posterior al 15 de octubre de este año.
+
+![alt text](image-11.png)
