@@ -68,7 +68,8 @@ echo "-----------------------------------" >> "$ARCHIVO_SALIDA"
 ```bash
 echo "Escaneando equipos conectados..."
 nmap -sn "$RED" | grep "Nmap scan report" | awk '{print $5}' > ip_detectadas.txt
-
+```
+```bash
 echo "Equipos detectados:" >> "$ARCHIVO_SALIDA"
 cat ip_detectadas.txt >> "$ARCHIVO_SALIDA"
 echo "-----------------------------------" >> "$ARCHIVO_SALIDA"
@@ -79,7 +80,7 @@ echo "-----------------------------------" >> "$ARCHIVO_SALIDA"
    echo "Escaneando puertos y detectando sistemas operativos..."
    while read -r IP; do
    TTL=$(ping -c 1 "$IP" | grep "ttl=" | awk -F"ttl=" '{print $2}' | awk '{print $1}')
-    ```
+   ```
    2. ``` ping -c 1 "$IP" ``` Envia un paquete ICMP a la IP.
    3. ``` grep "ttl=" ```Filtra las líneas con el valor TTL.
    4. ```awk -F"ttl=" '{print $2}' ``` Se separa la línea en dos y se queda con la segunda parte. 
