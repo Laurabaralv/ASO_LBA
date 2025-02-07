@@ -99,7 +99,7 @@ echo "-----------------------------------" >> "$ARCHIVO_SALIDA"
    ```bash
    echo "IP: $IP - Sistema Operativo: $OS" >> "$ARCHIVO_SALIDA"
     echo "Puertos abiertos:" >> "$ARCHIVO_SALIDA"
-    nc -zv "$IP" 1-1024 2>&1 | grep "succeeded" | awk '{print $5}' >> "$ARCHIVO_SALIDA" 
+    nc -zv "$IP" 1-1024 2>&1 | grep "succeeded" | awk '{print $5}' >> "$ARCHIVO_SALIDA"
     ```
 6. Indicamos que hemos acabado de hacer el analisis.
 ```bash
